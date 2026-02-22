@@ -1,0 +1,151 @@
+@use "../globals.scss" as *;
+
+.coop-container {
+  --pie-border-color: #C9971C;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: url("/img/dotted-bg.png") repeat;
+  background-size: 100% auto;
+  font-family: $font-nunito;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @import "../../components/layout/BannerStyles.scss";
+  @import "../../components/layout/NavButtons.scss";
+
+  .bg-banner {
+    width: clamp(400px, 100vw, 1800px);
+  }
+
+  .bg-title {
+    top: 35%;
+    background: url("/coop/co-op-banner.png") no-repeat center/contain;
+  }
+
+  section.coop-chart-section:nth-of-type(2) {
+    margin-top: -6rem;
+  }
+
+  @import "../../components/layout/SectionStyles.scss";
+
+  .coop-chart-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+
+
+    .charts-row {
+      max-width: 100%;
+
+      > * {
+        max-width: 650px;
+      }
+
+      &.single-row,
+      &.astro-row {
+        justify-content: center;
+      }
+    }
+
+    .chart-container {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+
+      .chart-wrapper {
+        height: 460px;
+      }
+
+      &.wide {
+        flex: 1 1 100%;
+      }
+
+      h3 {
+        @include graph-question-text-style;
+        margin-bottom: 1rem;
+        color: $color-darkest-purple;
+      }
+    }
+  }
+
+  .awkward-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .awkward-card {
+    background: #FCF3CF;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(80, 60, 120, 0.08);
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #F4D03F;
+    font-family: $font-nunito;
+  }
+
+  .nav-buttons {
+    .lifestyle-btn {
+      background: var(--color-purple-light);
+      color: #3d2670;
+      border-color: #6d4fa3;
+    }
+
+    .pre-mgte-btn {
+      background: var(--color-green-primary);
+      color: #2d3d1a;
+      border-color: #5a7d4a;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    .coop-chart-section {
+      margin: 4rem;
+    }
+
+    .background {
+      height: 56vh;
+
+      .bg-banner {
+        top: 22rem;
+      }
+
+      .bg-title {
+        width: 160%;
+      }
+
+      .bg-lockers {
+        height: clamp(300px, 40vh, 800px);
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    .coop-chart-section {
+      margin: 2rem;
+    }
+
+    section.coop-chart-section:nth-of-type(2) {
+      margin-top: -4rem;
+    }
+
+    .background {
+      height: 46vh;
+
+      .bg-banner {
+        top: 14rem;
+      }
+
+      .bg-title {
+        width: 200%;
+      }
+
+      .bg-lockers {
+        height: clamp(300px, 10vh, 800px);
+      }
+    }
+  }
+}

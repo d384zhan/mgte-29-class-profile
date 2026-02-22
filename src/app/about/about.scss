@@ -1,0 +1,130 @@
+@use "../globals.scss" as *;
+
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: url("/img/dotted-bg.png") repeat;
+  background-size: 100% auto;
+  font-family: $font-nunito;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @import "../../components/layout/BannerStyles.scss";
+  @import "../../components/layout/NavButtons.scss";
+
+  .bg-title {
+    background: url("/about/about-banner.png") no-repeat center/contain;
+  }
+}
+
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin-top: -6rem;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    @include description-style;
+    font-size: 1.2rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.post-1a-final {
+  content: '';
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1600 / 600;
+  background: url("/about/post-1a-final.png") no-repeat center/contain;
+}
+
+.section-text {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.whats-mgte {
+  content: '';
+  display: block;
+  margin-top: -6rem;
+  margin-bottom: -8rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1600 / 600;
+  background: url("/about/whats-mgte.png") no-repeat center/contain;
+}
+
+.post-1b-final {
+  content: '';
+  display: block;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1600 / 600;
+  background: url("/about/post-1b-final.png") no-repeat center/contain;
+}
+
+.section-title-2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.bulletin-board {
+  position: relative;
+  display: block;
+  margin: 2rem auto 1rem auto;
+  width: 75%;
+  max-width: 100%;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-md) {
+    width: 90%;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    width: 98%;
+  }
+}
+
+.bulletin-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.bulletin-overlay {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.nav-buttons {
+    .awards-btn {
+      background: #FFE7A1;
+      color: #3d2670;
+      border-color: #F3C959;
+    }
+  }

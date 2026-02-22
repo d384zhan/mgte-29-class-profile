@@ -1,0 +1,54 @@
+@use "../globals.scss" as *;
+
+.classawards-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: url("/img/dotted-bg.png") repeat;
+  background-size: 100% auto;
+  font-family: $font-nunito;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @import "../../components/layout/BannerStyles.scss";
+  @import "../../components/layout/NavButtons.scss";
+
+  .bg-title {
+    background: url("/awards/awards-banner.png") no-repeat center/contain;
+  }
+}
+
+@import "../../components/layout/SectionStyles.scss";
+
+.awards-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title:first-of-type {
+    margin-top: -6rem;
+}
+
+.superlatives {
+  display: block;
+  margin: 2rem auto 1rem auto;
+  width: 75%;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-buttons {
+    .about-btn {
+      background: var(--color-purple-light);
+      color: #3d2670;
+      border-color: #6d4fa3;
+    }
+
+    .gallery-btn {
+      background: var(--color-blue-primary);
+      color: #2d3d1a;
+      border-color: #316798;
+    }
+  }

@@ -1,0 +1,60 @@
+@use "../globals.scss" as *;
+
+.academics-container {
+  --pie-border-color: #1E4D78;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: url("/img/dotted-bg.png") repeat;
+  background-size: 100% auto;
+  font-family: $font-nunito;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @import "../../components/layout/BannerStyles.scss";
+
+  .bg-title {
+    background: url("/academics/academics-banner.png") no-repeat center/contain;
+  }
+}
+
+@import "../../components/layout/SectionStyles.scss";
+@import "../../components/layout/NavButtons.scss";
+
+.academics-section {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  > .chart-container {
+    margin-bottom: 2rem;
+  }
+}
+
+.section-title {
+  &:first-of-type {
+    margin-top: -6rem;
+  }
+}
+
+.academics-imgs {
+  display: block;
+  margin: 1rem auto 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-buttons {
+  .about-btn {
+    background: var(--color-purple-light);
+    color: #3d2670;
+    border-color: #6d4fa3;
+  }
+
+  .gallery-btn {
+    background: var(--color-yellow-light);
+    color: #2d3d1a;
+    border-color: #E9CB6D;
+  }
+}
