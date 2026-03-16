@@ -20,6 +20,23 @@
   }
 }
 
+// ─── Banner Section ──────────────────────────────────────
+.gallery-banner-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-md) {
+    height: 70vh;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    height: 50vh;
+    min-height: 280px;
+  }
+}
+
 // ─── Decorative Accent Photos on Banner ──────────────────
 .gallery-accent {
   position: absolute;
@@ -54,6 +71,16 @@
     aspect-ratio: 3/4;
   }
 
+  @media (max-width: $breakpoint-md) {
+    &--left {
+      width: clamp(90px, 12vw, 160px);
+    }
+
+    &--right {
+      width: clamp(110px, 14vw, 200px);
+    }
+  }
+
   @media (max-width: $breakpoint-sm) {
     display: none;
   }
@@ -70,12 +97,17 @@
 
   &--left {
     bottom: 8%;
-    left: -2%;
+    left: 0;
   }
 
   &--right {
     bottom: 12%;
-    right: -2%;
+    right: 0;
+    transform: scaleX(-1);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: clamp(70px, 12vw, 160px);
   }
 
   @media (max-width: $breakpoint-sm) {
@@ -91,7 +123,6 @@
   margin: -4rem auto 0;
 
   h1 {
-    font-family: $font-nunito;
     font-weight: 800;
     font-size: clamp(1.8rem, 3.5vw, 3rem);
     color: var(--color-text-primary);
@@ -99,11 +130,19 @@
   }
 
   p {
-    font-family: $font-nunito;
     font-style: italic;
     font-size: clamp(0.85rem, 1.3vw, 1.1rem);
     color: var(--color-text-light);
     line-height: 1.4;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: -2rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: -1rem;
+    padding: 1rem 1rem 0.5rem;
   }
 }
 
@@ -113,12 +152,20 @@
   margin: 8px auto;
   padding: 0 16px;
 
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 8px;
+  }
+
   &__frame {
     background: white;
     padding: 5px;
     border: 2px solid var(--color-yellow-primary);
     border-radius: 3px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12);
+
+    @media (max-width: $breakpoint-sm) {
+      padding: 3px;
+    }
 
     img {
       width: 100%;
@@ -130,7 +177,6 @@
 }
 
 // ─── Collage Grid ────────────────────────────────────────
-// Use CSS grid with dense packing to eliminate gaps
 .gallery-collage {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -140,6 +186,12 @@
   margin: 1rem auto 0;
   padding: 0 16px;
 
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1600px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 90px;
+  }
+
   @media (max-width: $breakpoint-md) {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 70px;
@@ -147,7 +199,9 @@
 
   @media (max-width: $breakpoint-sm) {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 60px;
+    grid-auto-rows: 55px;
+    gap: 3px;
+    padding: 0 8px;
   }
 }
 
@@ -161,7 +215,6 @@
   transform: rotate(var(--rotation, 0deg));
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
-  // Default span: 3 rows
   grid-row: span 3;
 
   &:hover {
@@ -178,7 +231,6 @@
     border-radius: 1px;
   }
 
-  // Vary sizes for entropy
   &--tall {
     grid-row: span 4;
   }
@@ -189,6 +241,11 @@
 
   @media (max-width: $breakpoint-sm) {
     padding: 3px;
+    transform: rotate(calc(var(--rotation, 0deg) * 0.5));
+
+    &:hover {
+      transform: rotate(0deg) scale(1.03);
+    }
   }
 }
 
@@ -197,4 +254,18 @@
   max-width: 1200px;
   margin: 2rem auto 1rem;
   padding: 0 2rem 3rem;
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1600px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 1rem 2rem;
+    margin: 1.5rem auto 0.5rem;
+
+    .nav-btn {
+      padding: 0.4rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
 }

@@ -197,6 +197,69 @@ button:focus-visible {
   }
 }
 
+// Mobile block overlay — shown on screens < 1000px
+.mobile-block-overlay {
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    overflow: hidden;
+  }
+}
+
+.mobile-block-bg {
+  position: absolute;
+  inset: 0;
+  background: url("/landing/lockers_sm.jpg") no-repeat center;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(98, 71, 170, 0.75);
+  }
+}
+
+.mobile-block-wave {
+  display: none;
+}
+
+.mobile-block-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  font-family: $font-nunito;
+}
+
+.mobile-block-pennant {
+  width: clamp(200px, 60vw, 300px);
+  height: auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.mobile-block-content p {
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  line-height: 1.7;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--color-yellow-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
 // Google charts HTML tooltip customization
 // Structure: div.google-visualization-tooltip > ul.google-visualization-tooltip-item-list
 //   > li.google-visualization-tooltip-item > span (with heavy inline styles)
