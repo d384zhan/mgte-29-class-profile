@@ -197,7 +197,7 @@ button:focus-visible {
   }
 }
 
-// Mobile block overlay — shown on screens < 1000px
+// Mobile block overlay — shown on screens <= 1024px
 .mobile-block-overlay {
   display: none;
 
@@ -222,10 +222,6 @@ button:focus-visible {
     inset: 0;
     background: rgba(98, 71, 170, 0.75);
   }
-}
-
-.mobile-block-wave {
-  display: none;
 }
 
 .mobile-block-content {

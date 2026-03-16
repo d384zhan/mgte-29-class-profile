@@ -23,7 +23,6 @@ export default function RootLayout({
       <body>
         <div className="mobile-block-overlay">
           <div className="mobile-block-bg" />
-          <div className="mobile-block-wave" />
           <div className="mobile-block-content">
             <img src="/landing/stickers/mgte/default.png" alt="MGTE 29" className="mobile-block-pennant" />
             <p>This site is best experienced on a larger screen. Switch to a desktop or tablet to explore the full class profile!</p>
