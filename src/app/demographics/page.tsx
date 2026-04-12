@@ -48,12 +48,7 @@ export default function DemographicsPage() {
         <section className="background">
           <span className="bg-banner" />
           <span className="bg-lockers" />
-          <img src="/demographics/globe.png" alt="" className="title-decor decor-globe" />
-          <img src="/demographics/Star 18.png" alt="" className="title-decor decor-star-18" />
-          <img src="/demographics/Star 19.png" alt="" className="title-decor decor-star-19" />
-          <img src="/demographics/Group 39928.png" alt="" className="title-decor decor-group" />
           <span className="bg-title" />
-          <img src="/demographics/Star 8.png" alt="" className="title-decor decor-star-8" />
         </section>
 
         <section className="demographics-section">
