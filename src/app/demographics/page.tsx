@@ -63,9 +63,9 @@ export default function DemographicsPage() {
           <p className="respondent-count">55 respondents</p>
           <div className="charts-row">
             <div className="pie-chart-wrapper">
-              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" style={{ top: '10%', right: '5%' }} />
-              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" style={{ top: '45%', left: '0%' }} />
-              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" style={{ bottom: '15%', right: '10%' }} />
+              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '10%', right: '5%' }} />
+              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '45%', left: '0%' }} />
+              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '15%', right: '10%' }} />
               <GenericChart
                 title="What Do You Identify As?"
                 dataUrl="/data/demographics/gender.csv"
@@ -78,9 +78,9 @@ export default function DemographicsPage() {
               />
             </div>
             <div className="pie-chart-wrapper">
-              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" style={{ top: '15%', left: '3%' }} />
-              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" style={{ top: '20%', right: '3%' }} />
-              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" style={{ bottom: '20%', right: '15%' }} />
+              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '15%', left: '3%' }} />
+              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '20%', right: '3%' }} />
+              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '20%', right: '15%' }} />
               <GenericChart
                 title="What Is Your Sexuality?"
                 dataUrl="/data/demographics/sexuality.csv"
@@ -170,9 +170,9 @@ export default function DemographicsPage() {
               }}
             />
             <div className="pie-chart-wrapper">
-              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" style={{ top: '10%', right: '10%' }} />
-              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" style={{ top: '45%', left: '5%' }} />
-              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" style={{ bottom: '12%', right: '3%' }} />
+              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '10%', right: '10%' }} />
+              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '45%', left: '5%' }} />
+              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '12%', right: '3%' }} />
               <GenericChart
                 title="When Were You Born?"
                 dataUrl="/data/demographics/birth-year.csv"
@@ -192,9 +192,9 @@ export default function DemographicsPage() {
           <p className="respondent-count">55 respondents</p>
           <div className="charts-row">
             <div className="pie-chart-wrapper">
-              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" style={{ top: '15%', left: '5%' }} />
-              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" style={{ top: '8%', right: '10%' }} />
-              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" style={{ bottom: '20%', right: '3%' }} />
+              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '15%', left: '5%' }} />
+              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '8%', right: '10%' }} />
+              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '20%', right: '3%' }} />
               <GenericChart
                 title="Do Your Parents Work in the STEM Fields?"
                 dataUrl="/data/demographics/parents-in-stem.csv"
@@ -207,9 +207,9 @@ export default function DemographicsPage() {
               />
             </div>
             <div className="pie-chart-wrapper">
-              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" style={{ top: '5%', left: '10%' }} />
-              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" style={{ bottom: '18%', left: '3%' }} />
-              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" style={{ bottom: '25%', right: '8%' }} />
+              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '5%', left: '10%' }} />
+              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '18%', left: '3%' }} />
+              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '25%', right: '8%' }} />
               <GenericChart
                 title="How Many Siblings Do You Have?"
                 dataUrl="/data/demographics/of-siblings.csv"
@@ -264,14 +264,14 @@ export default function DemographicsPage() {
           <p className="respondent-count">55 respondents</p>
           <div className="charts-row relationship-row">
             <div className="hearts-container">
-              <img src="/demographics/heart1.png" alt="" className="heart heart-1" />
-              <img src="/demographics/heart2.png" alt="" className="heart heart-2" />
-              <img src="/demographics/heart3.png" alt="" className="heart heart-3" />
+              <img src="/demographics/heart1.png" alt="" className="heart heart-1" loading="lazy" />
+              <img src="/demographics/heart2.png" alt="" className="heart heart-2" loading="lazy" />
+              <img src="/demographics/heart3.png" alt="" className="heart heart-3" loading="lazy" />
             </div>
             <div className="pie-chart-wrapper">
-              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" style={{ top: '8%', left: '12%' }} />
-              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" style={{ top: '18%', right: '5%' }} />
-              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" style={{ bottom: '15%', left: '8%' }} />
+              <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '8%', left: '12%' }} />
+              <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '18%', right: '5%' }} />
+              <img src="/demographics/Highlight 40.png" alt="" className="chart-highlight" loading="lazy" style={{ bottom: '15%', left: '8%' }} />
               <GenericChart
                 title="Are You In A Relationship?"
                 dataUrl="/data/demographics/relationship-status.csv"

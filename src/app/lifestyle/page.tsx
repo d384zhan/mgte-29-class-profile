@@ -266,6 +266,7 @@ export default function LifestylePage() {
               src="/lifestyle/shows.png"
               alt="Shows we were binging"
               className="section-img"
+              loading="lazy"
             />
           </div>
 
@@ -300,6 +301,7 @@ export default function LifestylePage() {
               src="/lifestyle/experiences.png"
               alt="Craziest experiences in MGTE"
               className="section-img"
+              loading="lazy"
             />
           </div>
 

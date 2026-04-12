@@ -86,35 +86,6 @@
   }
 }
 
-// ─── Canada Goose Illustrations ──────────────────────────
-.gallery-goose {
-  position: absolute;
-  z-index: 4;
-  width: clamp(100px, 16vw, 240px);
-  height: auto;
-  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.2));
-  pointer-events: none;
-
-  &--left {
-    bottom: 8%;
-    left: 0;
-  }
-
-  &--right {
-    bottom: 12%;
-    right: 0;
-    transform: scaleX(-1);
-  }
-
-  @media (max-width: $breakpoint-md) {
-    width: clamp(70px, 12vw, 160px);
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    display: none;
-  }
-}
-
 // ─── Title Section ───────────────────────────────────────
 .gallery-title {
   text-align: center;

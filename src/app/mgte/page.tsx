@@ -70,6 +70,7 @@ export default function MgtePage() {
               src="/mgte/describe.png"
               alt="How MGTE students describe their program"
               className="section-img"
+              loading="lazy"
             />
           </div>
 
@@ -118,6 +119,7 @@ export default function MgtePage() {
               src="/mgte/phrase.png"
               alt="The Management Experience"
               className="section-img"
+              loading="lazy"
             />
           </div>
 

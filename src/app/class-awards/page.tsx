@@ -21,7 +21,7 @@ export default function ClassAwardsPage() {
           <p className="section-subtitle">Who&apos;s mostly likely to be famous? Who almost missed an exam... MGTE have spoken and results are in!</p>
         </section>
         
-        <img src="/awards/all-superlatives.png" alt="Superlatives" className="superlatives"/>
+        <img src="/awards/all-superlatives.png" alt="Superlatives" className="superlatives" loading="lazy" />
 
         {/* Buttons */}
         <div className="nav-buttons">
