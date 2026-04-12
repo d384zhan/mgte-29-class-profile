@@ -15,6 +15,11 @@
 
   @import "../../components/layout/BannerStyles.scss";
 
+  .bg-banner {
+    background: url("/img/banner-bg.png") no-repeat center top;
+    background-size: cover;
+  }
+
   .title-decor {
     position: absolute;
 
