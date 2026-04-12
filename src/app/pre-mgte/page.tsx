@@ -186,6 +186,7 @@ export default function PreMgtePage() {
               src="/pre-mgte/cloud.png"
               alt="Childhood Dream Jobs Word Cloud"
               className="word-cloud-img"
+              loading="lazy"
             />
           </div>
 
@@ -196,6 +197,7 @@ export default function PreMgtePage() {
             <img
               src="/pre-mgte/advice.png"
               alt="Advice to Our Younger Selves"
+              loading="lazy"
               style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px' }}
             />
           </div>

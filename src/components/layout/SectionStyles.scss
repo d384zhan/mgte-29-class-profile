@@ -29,6 +29,32 @@
     padding-top: 4rem;
 }
 
+// Alternate section spacing for visual rhythm
+.section-title:nth-of-type(even):not(:first-of-type) {
+    padding-top: 5rem;
+}
+
+// Subtle scroll-based fade-in (progressive enhancement)
+@supports (animation-timeline: view()) {
+    .charts-row,
+    .section-img-wrapper {
+        animation: sectionFadeIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 25%;
+    }
+
+    @keyframes sectionFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(12px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
 .charts-row {
     display: flex;
     flex-wrap: wrap;

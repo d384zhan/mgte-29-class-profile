@@ -318,13 +318,13 @@ export default function AcademicsPage() {
           {/* Prof quotes */}
           <h2 className="section-title">Best Professor Quotes</h2>
           <p className="section-subtitle">Zero Context</p>
-          <img src="/academics/prof-quotes.png" alt="Prof Quotes" className="academics-imgs"/>
+          <img src="/academics/prof-quotes.png" alt="Prof Quotes" className="academics-imgs" loading="lazy" />
 
           {/* Rating classes */}
           <h2 className="section-title">Rating Our Classes</h2>
           <p className="section-subtitle">The radar charts represent a course&apos;s rating with 1 - Terrible,  5 - Awesome where 1A - Purple, 1B - Blue.</p>
-          <img src="/academics/1a.png" alt="1A Classes" className="academics-imgs"/>
-          <img src="/academics/1b.png" alt="1B Classes" className="academics-imgs"/>
+          <img src="/academics/1a.png" alt="1A Classes" className="academics-imgs" loading="lazy" />
+          <img src="/academics/1b.png" alt="1B Classes" className="academics-imgs" loading="lazy" />
 
           {/* Habits vs academics */}
           <h2 className="section-title">Habits vs. Academic Performance</h2>
