@@ -53,8 +53,6 @@ export default function GalleryPage() {
           <span className="bg-banner" />
           <span className="bg-lockers" />
           <span className="bg-title" />
-          <Image src="/gallery/goose-left.png" alt="" width={480} height={350} className="gallery-goose gallery-goose--left" />
-          <Image src="/gallery/goose-left.png" alt="" width={480} height={350} className="gallery-goose gallery-goose--right" />
           <div className="gallery-accent gallery-accent--left">
             <Image src="/gallery/CarnivalBracelets.jpg" alt="" width={400} height={400} />
           </div>

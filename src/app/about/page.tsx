@@ -14,7 +14,7 @@ const teamMembers = [
   // Row 2 - Designers (evenly spaced, Ally width adjusted for equal height)
   { name: 'Ulyana Drahun', image: '/about/team/ulyana.png', linkedinUrl: 'https://www.linkedin.com/in/ulyana-drahun/', rotation: 3, style: { left: '6.7%', top: '25.2%', width: '19.8%' } },
   { name: 'Dhanvi Pandya', image: '/about/team/dhanvi.png', linkedinUrl: 'https://www.linkedin.com/in/dhanvipandya/', rotation: -2, style: { left: '29%', top: '25.2%', width: '19.8%' } },
-  { name: 'Gurman', image: '/about/team/gurman.png', rotation: 0, style: { left: '51.3%', top: '25.2%', width: '19.8%' } },
+  { name: 'Gurman', image: '/about/team/gurman.png', linkedinUrl: 'https://www.linkedin.com/in/gurmans/', rotation: 3, style: { left: '51.3%', top: '25.2%', width: '19.8%' } },
   { name: 'Ally Hao', image: '/about/team/ally2.png', linkedinUrl: 'https://www.linkedin.com/in/ally-hao/', rotation: 2, style: { left: '73.5%', top: '25.1%', width: '19.8%' } },
   // Row 3 - Developers
   { name: 'Omar Anwar', image: '/about/team/anwar.png', linkedinUrl: 'https://www.linkedin.com/in/omar-anwar19/', rotation: -3, style: { left: '6.7%', top: '41%', width: '19.8%' } },
