@@ -22,7 +22,7 @@
 
 // ─── Banner Section ──────────────────────────────────────
 .gallery-banner-section {
-  height: clamp(500px, 56vw, 900px);
+  aspect-ratio: 1440 / 900;
 }
 
 // ─── Decorative Accent Photos on Banner ──────────────────

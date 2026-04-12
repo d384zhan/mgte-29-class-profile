@@ -3,7 +3,7 @@
 .background {
   position: relative;
   width: 100%;
-  height: clamp(500px, 56vw, 900px);
+  aspect-ratio: 1440 / 900;
   overflow: hidden;
 }
 
