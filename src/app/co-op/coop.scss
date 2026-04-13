@@ -17,6 +17,7 @@
   @import "../../components/layout/NavButtons.scss";
 
   .bg-title {
+    top: 30%;
     background: url("/coop/co-op-banner.png") no-repeat center/contain;
   }
 
@@ -34,7 +35,7 @@
     .charts-row {
       max-width: 100%;
 
-      > * {
+      >* {
         max-width: 650px;
       }
 
