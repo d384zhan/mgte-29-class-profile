@@ -22,25 +22,13 @@
 
 // ─── Banner Section ──────────────────────────────────────
 .gallery-banner-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
-  @media (max-width: $breakpoint-md) {
-    height: 70vh;
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    height: 50vh;
-    min-height: 280px;
-  }
+  aspect-ratio: 1440 / 900;
 }
 
 // ─── Decorative Accent Photos on Banner ──────────────────
 .gallery-accent {
   position: absolute;
-  z-index: 4;
+  z-index: 5;
   background: white;
   padding: 5px;
   border: 2px solid var(--color-yellow-primary);

@@ -48,12 +48,7 @@ export default function DemographicsPage() {
         <section className="background">
           <span className="bg-banner" />
           <span className="bg-lockers" />
-          <img src="/demographics/globe.png" alt="" className="title-decor decor-globe" />
-          <img src="/demographics/Star 18.png" alt="" className="title-decor decor-star-18" />
-          <img src="/demographics/Star 19.png" alt="" className="title-decor decor-star-19" />
-          <img src="/demographics/Group 39928.png" alt="" className="title-decor decor-group" />
           <span className="bg-title" />
-          <img src="/demographics/Star 8.png" alt="" className="title-decor decor-star-8" />
         </section>
 
         <section className="demographics-section">
@@ -262,12 +257,7 @@ export default function DemographicsPage() {
           <h2 className="section-title">Relationships</h2>
           <p className="section-subtitle">So someone is messy in MGTE...</p>
           <p className="respondent-count">55 respondents</p>
-          <div className="charts-row relationship-row">
-            <div className="hearts-container">
-              <img src="/demographics/heart1.png" alt="" className="heart heart-1" loading="lazy" />
-              <img src="/demographics/heart2.png" alt="" className="heart heart-2" loading="lazy" />
-              <img src="/demographics/heart3.png" alt="" className="heart heart-3" loading="lazy" />
-            </div>
+          <div className="charts-row">
             <div className="pie-chart-wrapper">
               <img src="/demographics/Highlight 34.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '8%', left: '12%' }} />
               <img src="/demographics/Highlight 33.png" alt="" className="chart-highlight" loading="lazy" style={{ top: '18%', right: '5%' }} />
