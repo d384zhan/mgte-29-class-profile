@@ -141,7 +141,7 @@ export default function DemographicsPage() {
             <h3 className="chart-question">Where Is Your Hometown?</h3>
             <div className="word-cloud" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto', padding: '0' }}>
               <img
-                src="/demographics/Group 40130.png"
+                src="/demographics/Location.png"
                 alt="Hometown Word Cloud"
                 style={{ maxWidth: '100%', height: 'auto', borderRadius: '12px' }}
               />
